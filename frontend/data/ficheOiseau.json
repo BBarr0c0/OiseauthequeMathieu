@@ -1,0 +1,37 @@
+[
+    {
+      "nom_fiche_oiseau": "Pie",
+      "image_fiche_oiseau": "frontend/assets/images/pieVertical.jpg",
+      "description_fiche_oiseau": "La pie (Pica pica) est un oiseau de la famille des corvidés, reconnaissable à son plumage noir et blanc contrastant. Elle possède une silhouette élégante avec une queue longue et arrondie. Les pies sont des oiseaux intelligents et sociaux, réputés pour leur curiosité et leur habileté à résoudre des problèmes. Elles sont également connues pour leur vol acrobatique et leur capacité à imiter divers sons.",
+      "contenu_fiche_oiseau": "La pie est une espèce commune en France et dans de nombreuses régions d'Europe. Elle se rencontre dans divers habitats, allant des forêts et des parcs aux zones rurales et urbaines. Les pies sont des oiseaux omnivores, se nourrissant d'une grande variété d'aliments tels que des insectes, des fruits, des graines, des œufs et des petits mammifères. Ces oiseaux sont reconnus pour leur comportement social complexe. Ils vivent souvent en groupes familiaux et communiquent entre eux à l'aide de diverses vocalisations. Les pies construisent des nids volumineux en hauteur, généralement dans les arbres, où elles élèvent leur progéniture. Elles sont de bonnes défenseuses de leur territoire et peuvent être agressives envers d'autres espèces d'oiseaux qui s'approchent trop près. La pie a une excellente mémoire et est capable de se souvenir de l'emplacement de centaines de caches alimentaires. Elle a également la capacité de reconnaître individuellement les membres de son groupe social et de se souvenir des interactions passées.En termes de conservation, la pie est une espèce largement répandue et sa population est considérée comme stable. Elle est souvent appréciée pour son intelligence et sa beauté. Cependant, dans certaines régions, elle peut causer des dommages aux cultures ou perturber d'autres espèces d'oiseaux. Veuillez noter que ces informations sont générales et peuvent varier légèrement en fonction de la région spécifique où l'oiseau est observé.",
+      "localisation_fiche_oiseau": "La pie se trouve en France dans..."
+    },
+    {
+      "nom_fiche_oiseau": "Choucas des tours",
+      "image_fiche_oiseau": "frontend/assets/images/choucasDesTours.jpg",
+      "description_fiche_oiseau": "Le choucas des tours (Corvus monedula) est un oiseau de la famille des corvidés. Il est de taille légèrement plus petite que la pie et présente un plumage généralement noir avec des reflets gris sur le dos et la poitrine. Le choucas des tours se distingue par son bec court et son vol rapide et acrobatique.",
+      "contenu_fiche_oiseau": "Le choucas des tours se trouve dans toute la France, en particulier dans les zones rocheuses et les falaises, ainsi que dans les zones urbaines où il niche souvent dans les bâtiments. C'est un oiseau omnivore qui se nourrit principalement d'insectes, de vers de terre, de graines et de déchets alimentaires. Les choucas des tours vivent en colonies et sont connus pour leur comportement social. Ils émettent des vocalisations variées et communiquent entre eux à l'aide de gestes et de postures. Ces oiseaux construisent leurs nids en utilisant des matériaux tels que des brindilles et de la terre, qu'ils placent dans des crevasses ou des cavités. Les choucas des tours sont des migrateurs partiels, certains individus se déplaçant vers des régions plus chaudes pendant l'hiver.",
+      "localisation_fiche_oiseau": "On peut trouver le choucas des tours..."
+    },
+    {
+      "nom_fiche_oiseau": "Chouette effraie",
+      "image_fiche_oiseau": "frontend/assets/images/chouetteEffraie.jpg",
+      "description_fiche_oiseau": "La chouette effraie (Tyto alba) est un rapace nocturne de taille moyenne. Elle est caractérisée par son visage en forme de cœur et son plumage blanc tacheté de brun pâle. La chouette effraie possède des ailes longues et larges, lui permettant de voler silencieusement pour chasser ses proies.",
+      "contenu_fiche_oiseau": "La chouette effraie est présente dans toute la France, mais elle est plus fréquente dans les zones rurales et les espaces ouverts tels que les prairies, les terres agricoles et les marécages. C'est un prédateur nocturne qui se nourrit principalement de petits rongeurs tels que les souris et les rats. Grâce à son audition extrêmement développée, elle peut localiser ses proies dans l'obscurité totale. La chouette effraie est connue pour son vol silencieux grâce à la structure spéciale de ses plumes. Elle construit généralement son nid dans des granges, des greniers ou des cavités d'arbres. La chouette effraie émet un cri strident et caractéristique, souvent associé à des ambiances nocturnes.",
+      "localisation_fiche_oiseau": "La chouette effraie niche dans..."
+    },
+    {
+      "nom_fiche_oiseau": "Rouge-gorge",
+      "image_fiche_oiseau": "frontend/assets/images/rougeGorge.jpg",
+      "description_fiche_oiseau": "Le rouge-gorge (Erithacus rubecula) est un petit passereau de la famille des muscicapidés. Il est reconnaissable grâce à sa poitrine orangée, son ventre blanchâtre et son petit bec fin. Le rouge-gorge possède un comportement territorial et est souvent associé aux jardins et aux zones boisées.",
+      "contenu_fiche_oiseau": "Le rouge-gorge est un oiseau très répandu en France, que l'on trouve dans divers habitats, allant des forêts aux jardins urbains. Il se nourrit principalement d'insectes, de vers de terre, de baies et de graines. Le rouge-gorge est un oiseau territorial qui défend vigoureusement son territoire contre les intrus, y compris d'autres rouge-gorges. Son chant mélodieux est souvent entendu pendant la saison de reproduction. Le rouge-gorge construit son nid dans des endroits abrités tels que des buissons ou des tas de feuilles. C'est un oiseau familièrement associé à la période de Noël en raison de sa présence fréquente dans les décorations et les cartes de vœux.",
+      "localisation_fiche_oiseau": "On trouve le rouge-gorge dans..."
+    },
+    {
+      "nom_fiche_oiseau": "Geai des chênes",
+      "image_fiche_oiseau": "frontend/assets/images/geaiDesChenes.jpg",
+      "description_fiche_oiseau": "Le geai des chênes (Garrulus glandarius) est un corvidé coloré et bruyant. Il possède un plumage principalement brun rosâtre, des ailes barrées de noir et de bleu et une calotte noire sur la tête. Le geai des chênes est également reconnaissable grâce à ses plumes caudales blanches qui sont visibles lorsqu'il s'envole.",
+      "contenu_fiche_oiseau": "Le geai des chênes est présent dans les forêts de chênes et de feuillus en France. Il se nourrit d'une variété d'aliments, tels que des glands, des graines, des insectes, des œufs d'oiseaux et des petits mammifères. Les geais des chênes sont connus pour leur capacité à cacher et à retrouver les caches de nourriture. Ils jouent un rôle important dans la dispersion des graines des arbres à travers leurs caches oubliées. Les geais des chênes sont des oiseaux bruyants et émettent une grande variété de vocalisations, y compris des cris d'alarme pour avertir les autres de la présence de prédateurs. Ils construisent leurs nids dans les arbres, souvent dans des endroits bien dissimulés. Les geais des chênes sont des oiseaux migrateurs partiels, certains individus effectuant des déplacements saisonniers.",
+      "localisation_fiche_oiseau": "Le geai des chênes se trouve principalement dans..."
+    }
+  ]

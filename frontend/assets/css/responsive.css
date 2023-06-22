@@ -1,0 +1,239 @@
+@media only screen and (max-width: 1600px) {  
+    #formConnexion, #formCreation {
+        padding: 5vh 15vw;/*pour oeuf connexion rend mieux*/
+    }
+
+    .fiche {
+        width: 50%;/*pour fiche oiseau rend mieux*/
+    }
+}
+
+@media only screen and (max-width: 1079px) {
+    .navBar {
+        justify-content: space-around;
+    }
+
+    .logoNavBar {
+        align-self: flex-start;
+    }
+
+    .centerNavBar {
+        align-self: flex-start;
+        width: 50px;
+    }
+
+    nav label {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .centerMenu {
+        display: none;
+        /*flex-direction: column;*/
+    }
+
+    .centerMenu a:hover {
+        box-shadow: none;
+    }
+
+    .idNavBar {
+        align-self: flex-start;
+    }
+
+    .liConnexion:hover .subMenu {
+        display: none;     /*annule l'apparition du submenu quand on survole S'identifier*/
+    }
+
+
+    /***************  menu burger   **********************/
+
+
+    #toggle:checked ~ .centerMenu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #toggle:checked ~ .centerMenu a {
+        /*display: block;*/
+        font-size: 6vw;
+        padding-right: 120vw;
+        padding-left: 45vw;
+        margin-left: -75vw;/*-1700%;*/
+        border: 2px solid var(--color-dark);
+    }
+
+    #toggle:checked ~ .centerMenu a:hover {
+        border-radius: 0;
+    }
+
+    /***************  banniere   **********************/
+
+    #theme {
+        right: 50px;
+        width: 100px;
+    }
+
+    #theme:checked ~ header .banner #imgNight {
+        margin-left: 0;
+    }
+
+    .banner {
+        padding-top: 50px;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /***************  FOOTER    **********************/
+
+
+    .reseaux img {
+        margin: 1vh 2vw;
+    }
+
+
+    /***************  MAIN    **********************/
+
+
+    #sectArticle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sectArticle h2 {
+        text-align: center;
+    }
+
+    /***************  CONNEXION/CREATION    ******************/
+
+    #formConnexion, #formCreation {
+        padding: 10vh 5vw;
+    }
+
+
+    .g-recaptcha {
+        transform:scale(0.77);
+        -webkit-transform:scale(0.77);
+    }
+
+    /***************  FICHE OISEAU    ******************/
+
+    .fiche {
+        width: 75%;/*pour fiche oiseau rend mieux*/
+    }
+
+    #ficheOiseau input {
+        padding: 10px 0;
+        font-size: 35px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 750px) {  /*que pour btn j/n avec JS ce sera surêment mieux*/
+    #theme {
+        right: 50px;
+        width: 50px;
+    }
+}
+
+
+/**************
+  Petit ecran
+***************/
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .theme, #theme {
+        display: none;   /*désactive la possibilité de changer de thème (pour le moment il faudra essayer de le remettre + tard)*/
+    }
+
+    .logoNavBar img {
+        display: none;
+        position: absolute;
+    }
+
+    .logoNavBar p {
+        padding: 16px 20px;
+    }
+
+    .idNavBar a {
+        padding: 16px 10px;
+    }
+
+
+    /***************  FOOTER    **********************/
+
+
+    footer {
+        flex-direction: column;
+    }
+
+    .centralFooter {
+        border: none;
+        border-top: 1px dashed var(--color-dark);
+        border-bottom: 1px dashed var(--color-dark);
+    }
+
+    .logoFooter img {
+        margin-right: -20px;
+    }
+
+    .reseaux {
+        margin-top: 2vh;
+    }
+
+    .reseaux img {
+        height: 50px;
+        margin: 1vh 5vw;
+    }
+
+
+    /***************  MAIN    **********************/
+
+
+    .centralContainer {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /***************  CONNEXION/CREATION   **********************/
+
+    #formConnexion, #formCreation {
+        width: 100vw;
+        padding: 8vh 0;
+    }
+
+    .g-recaptcha {
+        transform:scale(0.60);
+        -webkit-transform:scale(0.60);
+    }
+
+    .messageFormulaire {
+        text-align: center;
+        max-width: 200px;
+    }
+
+    .slide {
+        overflow: scroll;             /*montre ou cache la barre de scroll je l'active ici pour qu'en mode portable on puisse scroller*/
+    }
+
+    /***************  FICHE OISEAU    ******************/
+
+    #ficheOiseau input {
+        padding: 6px 0;
+        font-size: 25px;
+    }
+
+    .fiche .ficheInner {
+        padding: 1%;
+        font-size: 1.0em;
+    }
+}

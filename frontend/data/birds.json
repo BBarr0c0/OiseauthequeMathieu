@@ -1,0 +1,158 @@
+{
+    "birds": [
+    {
+        "name": "Pie",
+        "family": "Corvidae",
+        "diet": "Omnivore",
+        "wingspan": "52-62cm",
+        "image": "./frontend/assets/images/pieVertical.jpg",
+        "alt": "Pie",
+        "title": "Pie"
+    },
+    {
+        "name": "Chouette Effraie",
+        "family": "Tytonidae",
+        "diet": "Carnivore",
+        "wingspan": "90-107cm",
+        "image": "./frontend/assets/images/chouetteEffraieVertical.jpg",
+        "alt": "Chouette effraie",
+        "title": "Chouette effraie"
+    },
+    {
+        "name": "Rouge-gorge",
+        "family": "Muscicapidae",
+        "diet": "Insectivore",
+        "wingspan": "20-22cm",
+        "image": "./frontend/assets/images/rougeGorgeVertical.jpg",
+        "alt": "Rouge Gorge",
+        "title": "Rouge-gorge"
+    },
+    {
+        "name": "Geai des chênes",
+        "family": "Corvidae",
+        "diet": "Omnivore",
+        "wingspan": "45-55cm",
+        "image": "./frontend/assets/images/geaiDesChenesVertical.jpg",
+        "alt": "Geai des chênes",
+        "title": "Geai des chênes"
+    },
+    {
+        "name": "Goeland argenté",
+        "family": "Laridae",
+        "diet": "Omnivore",
+        "wingspan": "120-160cm",
+        "image": "./frontend/assets/images/goeland.jpg",
+        "alt": "Goeland argenté",
+        "title": "Goeland argenté"
+    },
+    {
+        "name": "Grand Corbeau",
+        "family": "Corvidae",
+        "diet": "Omnivore",
+        "wingspan": "100-150cm",
+        "image": "./frontend/assets/images/grandCorbeauVertical.jpg",
+        "alt": "Grand corbeau",
+        "title": "Grand corbeau"
+    },
+    {
+        "name": "Grande Aigrette",
+        "family": "Ardeidae",
+        "diet": "Carnivore",
+        "wingspan": "130-170cm",
+        "image": "./frontend/assets/images/grandeAigrette.jpg",
+        "alt": "Grande Aigrette",
+        "title": "Grande Aigrette"
+    },
+    {
+        "name": "Mésange bleue",
+        "family": "Paridae",
+        "diet": "Insectivore",
+        "wingspan": "12-14cm",
+        "image": "./frontend/assets/images/mesangeBleuVertical.jpg",
+        "alt": "Mésange bleue",
+        "title": "Mésange bleue"
+    },
+    {
+        "name": "Canard Colvert",
+        "family": "Anatidae",
+        "diet": "Omnivore",
+        "wingspan": "81-98cm",
+        "image": "./frontend/assets/images/canardColvertVertical.jpg",
+        "alt": "Canard Colvert",
+        "title": "Canard Colvert"
+    },
+    {
+        "name": "Choucas des Tours",
+        "family": "Corvidae",
+        "diet": "Omnivore",
+        "wingspan": "64-73cm",
+        "image": "./frontend/assets/images/choucasDesToursVertical.jpg",
+        "alt": "Choucas des Tours",
+        "title": "Choucas des Tours"
+    },
+    {
+        "name": "Moineau",
+        "family": "Passeridae",
+        "diet": "Omnivore",
+        "wingspan": "25cm",
+        "image": "./frontend/assets/images/moineauHorizontal.jpg",
+        "alt": "Moineau Domestique",
+        "title": "Moineau Domestique"
+    },
+    {
+        "name": "Merle Noir",
+        "family": "Turdidae",
+        "diet": "Omnivore",
+        "wingspan": "34-38cm",
+        "image": "./frontend/assets/images/merleNoirHorizontal.jpg",
+        "alt": "Merle Noir",
+        "title": "Merle Noir"
+    },
+    {
+        "name": "Hirondelle Rustique",
+        "family": "Hirundinidae",
+        "diet": "Insectivore",
+        "wingspan": "32-34cm",
+        "image": "./frontend/assets/images/hirondelleVertical.jpg",
+        "alt": "Hirondelle Rustique",
+        "title": "Hirondelle Rustique"
+    },
+    {
+        "name": "Pic Vert",
+        "family": "Picidae",
+        "diet": "Insectivore",
+        "wingspan": "40-42cm",
+        "image": "./frontend/assets/images/picVert.jpg",
+        "alt": "Pic Vert",
+        "title": "Pic Vert"
+    },
+    {
+        "name": "Pic Epeiche",
+        "family": "Picidae",
+        "diet": "Insectivore",
+        "wingspan": "34-39cm",
+        "image": "./frontend/assets/images/picEpeiche.jpg",
+        "alt": "Pic Epeiche",
+        "title": "Pic Epeiche"
+    },
+    {
+        "name": "Bouvreuil Pivoine",
+        "family": "Fringillidae",
+        "diet": "Granivore",
+        "wingspan": "28cm",
+        "image": "./frontend/assets/images/bouvreuilPivoine.jpg",
+        "alt": "Bouvreuil Pivoine",
+        "title": "Bouvreuil Pivoine"
+    },
+    {
+        "name": "Bergeronnette Grise",
+        "family": "Motacillidae",
+        "diet": "Insectivore",
+        "wingspan": "30-32cm",
+        "image": "./frontend/assets/images/bergeronnetteGrise.jpg",
+        "alt": "Bergeronnette Grise",
+        "title": "Bergeronnette Grise"
+    }
+    ]
+}
+  

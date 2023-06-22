@@ -1,0 +1,932 @@
+:root {
+    --color-light: #eeeee4;
+    --color-dark: #161615;
+    --color-navBar: #bbb292;
+    --color-navBarHover: #c0a756;/*#c2b78f;*/
+    --color-borderor: #d4b445;
+    --color-backtext: #ebebeb;
+    --color-hovertext: #ccedf3;
+    --color-backtextdark: #666666;
+    --color-hovertextdark: #002329;
+    --color-trans: #ffffff00;
+}
+
+* {
+    background-color: var(--color-light);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--color-dark);
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 0;*/
+}
+
+
+/*******************************
+----------HEADER---------------
+******************************/
+
+
+.navBar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: var(--color-navBar);
+    box-shadow: 0 5px 10px var(--color-navBar);
+    z-index: 75;
+}
+
+.navBar div, 
+.navBar img, 
+.navBar p, 
+.navBar nav, 
+.navBar ul, 
+.navBar li, 
+.navBar a {
+    background-color: var(--color-navBar);
+}
+
+.logoNavBar a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.logoNavBar img {
+    height: 40px;
+    width: 40px;
+    margin-left: 2vw;
+}
+
+.logoNavBar p {
+    padding: 16px 15px;
+}
+
+/********DEBUT Menu burger********/
+
+nav label {
+    background-color: var(--color-navBar);
+    color: var(--color-light);
+    font-size: 40px;
+  }
+
+nav label:hover {
+    box-shadow: 1px 1px 5px var(--color-dark);
+    border-radius: 100% 100%;
+}
+
+nav label, 
+nav input {
+  display: none;
+}
+
+/********FIN Menu burger********/
+
+.centerMenu {
+    display: flex;
+    /*justify-content: space-around;*/
+}
+
+.centerMenu li {
+    margin: 0 1vw;      /*Créer espacement entre les onglets barre nav*/
+}
+
+.idNavBar ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 2vw;
+}
+
+.idNavBar li {
+    padding: 0 6px;
+}
+
+.menu .subMenu {
+    display: none;      /*rend invisible sous menu*/
+    position: absolute; /*permet de le sortir de l'ordre html et donc de pas prendre de l'espace supplémentaire dans la barre nav*/
+}
+
+.liConnexion a, 
+.centerMenu a {
+    display: block; /*pour .liConnexion permet que le sous menu se déplie*/
+    padding: 16px 30px; 
+}
+
+.liConnexion:hover .subMenu {
+    display: block;     /*Pour que le submenu apparait quand on survole S'identifier*/
+    text-align: left;
+}
+
+.subMenu a {
+    white-space: nowrap; /*Empêche retour ligne des li du subMenu*/
+    margin: 0 -7px;
+}
+
+.logoNavBar a:hover, 
+.centerMenu a:hover, 
+.liConnexion a:hover, 
+.subMenu a:hover {
+    background-color: var(--color-navBarHover);
+    box-shadow: -5px 0px 15px var(--color-dark);
+    border-top: 1px solid var(--color-dark);
+    border-bottom: 1px solid var(--color-dark);
+    text-shadow: 5px 5px 25px var(--color-borderor);
+    transition: color 0.5s ease-out;
+}
+
+.logoNavBar a:hover p, 
+.logoNavBar a:hover img {
+    background-color: var(--color-navBarHover);
+}
+
+.centerMenu a:hover {
+    border-radius: 100% 100%;
+}
+
+
+
+/**********************  THEME  ******************/
+
+
+
+.themeD {
+    display: none;      /*rend invisible*/
+    position: absolute; /*permet de le sortir de l'ordre html et donc de pas prendre de l'espace supplémentaire*/
+}
+
+.themeL img, 
+.themeD img {
+    height: 30px;
+}
+
+#theme {    /*checkbox caché derrière l'img (à peu près)*/    
+    position: fixed;
+    cursor: pointer;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    z-index: 80; /*Doit être placer devant la nav pour l'activer*/
+    opacity: 0; /*Rend invisible à l'oeil la checkbox*/
+}
+
+/*Theme dark general*/
+
+#theme:checked ~ header, 
+#theme:checked ~ main, 
+#theme:checked ~ header .banner, 
+#theme:checked ~ main .centralContainer, 
+#theme:checked ~ main h2, 
+#theme:checked ~ main #sectArticle, 
+#theme:checked ~ main #sectQuiz, 
+#theme:checked ~ main .itemSlide a {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+
+#theme:checked ~ header .banner #imgDay, 
+#theme:checked ~ header .themeL {
+    display: none;
+    position: absolute;
+}
+
+#theme:checked ~ header .themeD {
+    display: block;
+    position: relative;
+}
+
+#theme:checked ~ header .banner #imgNight {
+    display:block;
+    position:relative;
+    margin-left: 9.5vw; /*image thème dark a besoin en grand écran d'une petite rectification*/
+}
+
+#theme:checked ~ main {
+    background-image: url('../textures/plumeThemeNuit.png');
+    background-size: cover; /* Ajuster la taille de l'image pour couvrir tout le corps */
+}
+
+
+/*Theme dark zone texte*/
+
+#theme:checked ~ main .centralContainer div, 
+#theme:checked ~ main section, 
+#theme:checked ~ main article, 
+#theme:checked ~ main p, 
+#theme:checked ~ main a, 
+#theme:checked ~ main h1, 
+#theme:checked ~ main strong, 
+#theme:checked ~ main h3, 
+#theme:checked ~ main li, 
+#theme:checked ~ main span {
+    background-color: var(--color-backtextdark);
+    color: var(--color-light);
+}
+
+/*Theme dark hover pour presentation*/
+
+#theme:checked ~ main #welcome:hover, 
+#theme:checked ~ main #welcome:hover h1, 
+#theme:checked ~ main #welcome:hover strong, 
+#theme:checked ~ main #welcome:hover p, 
+#theme:checked ~ main #welcome:hover li {
+    background-color: var(--color-hovertextdark);
+}
+
+/*Theme dark pour background slider et ombre côté carte*/
+
+#theme:checked ~ main .centralContainer #birdSlider .slides .slide {
+    background-color: var(--color-dark);
+}
+
+#theme:checked ~ main .slides::before {
+    background-image: linear-gradient(90deg, var(--color-dark), transparent);
+}
+
+#theme:checked ~ main .slides::after {
+    background-image: linear-gradient(-90deg, var(--color-dark), transparent);
+}
+
+/*Theme dark hover pour description carte*/
+
+#theme:checked ~ main .itemSlide:hover .miniDescription, 
+#theme:checked ~ main .itemSlide:hover h3, 
+#theme:checked ~ main .itemSlide:hover p, 
+#theme:checked ~ main .itemSlide:hover span {
+    background-color: var(--color-hovertextdark);
+}
+
+/*Theme dark hover pour toutes balises articles*/
+
+#theme:checked ~ main article:hover, 
+#theme:checked ~ main article:hover h1, 
+#theme:checked ~ main article:hover strong, 
+#theme:checked ~ main article:hover p, 
+#theme:checked ~ main article:hover li, 
+#theme:checked ~ main article:hover h3, 
+#theme:checked ~ main article:hover a {
+    background-color: var(--color-hovertextdark);
+}
+
+
+/***************  BANNIERE    **********************/
+
+
+.banner {
+    text-align: center;
+    width: 75%;
+    padding-top: 5vh;
+    margin-left: 12vw;
+    color: var(--color-dark);
+    /*background-color: var(--color-light);*/
+    padding-bottom: 5vh;  /*mise a jour pour le theme dark*/
+    z-index: 0;
+}
+
+.banner img {
+    width: 75%;
+}
+
+#imgNight {
+    display: none;      /*rend invisible*/
+    position: absolute; /*permet de le sortir de l'ordre html et donc de pas prendre de l'espace supplémentaire*/
+}
+
+
+
+
+
+/*******************************
+----------FOOTER---------------
+******************************/
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-navBar);
+}
+
+footer a, 
+footer img, 
+footer p, 
+footer h5, 
+footer div, 
+footer span {
+    background-color: var(--color-navBar);
+}
+
+.logoFooter {
+    margin-right: 2vh;
+}
+
+.logoFooter img {
+    height: 250px;
+}
+
+footer h5 {
+    margin-bottom: 3vw;
+}
+
+.centralFooter {
+    padding: 70px 1vw;
+}
+
+.centralFooter p:last-of-type {
+    margin-top: 1vh;
+}
+
+.symbHoverFooter {
+    display: none;
+}
+
+.centralFooter a:hover, 
+.centralFooter a:hover 
+.symbHoverFooter {
+    display: inline-block;
+    color: var(--color-hovertext);
+}
+
+.reseaux {
+    margin-left: 2vw;
+}
+
+.reseaux img {
+    height: 30px;
+    margin-left: 1vw;
+}
+
+.reseaux a img {
+    transition: transform 1s ease;
+}
+
+.reseaux a:hover img {
+    transform: translateY(-10px);
+    transition: transform 1s ease;
+}
+
+
+
+
+/*******************************
+----------MAIN ACCUEIL----------
+******************************/
+
+
+
+
+main {
+    width: 100%;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    margin-top: -1vh; /*je fais passer le main par dessus la bannière car en mobile un trait étrange apparait*/
+    background-image: url('../textures/plumeThemeJour.png');
+    background-size: cover;
+}
+
+.centralContainer {
+    width: 75%;
+    margin-left: 12vw;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    border: 2px solid var(--color-borderor);
+    border-radius: 50% 20% / 10% 40%;
+    padding: 5vh 8vw;
+    box-shadow: -5px 1px 1px var(--color-borderor);
+    background-color: var(--color-backtext);
+    transition: background-color 2s ease;
+}
+
+#welcome h1, 
+#welcome strong, 
+#welcome p, 
+#welcome li {
+    background-color: var(--color-backtext);
+    transition: background-color 2s ease;
+}
+
+#welcome h1 {     
+    margin: 2vh 2vw;
+    text-align: center;
+}
+
+#welcome p, 
+#welcome ul {
+    margin: 0 1vw 1vh 2vw;
+}
+
+#welcome li {
+    list-style: inside circle;
+}
+
+#welcome:hover, 
+#welcome:hover h1, 
+#welcome:hover strong, 
+#welcome:hover p, 
+#welcome:hover li {
+    background-color: var(--color-hovertext);
+    transition: background-color 2s ease;
+}
+
+
+/************ZONE SLIDER**************/
+
+
+.titleSlider {
+    text-align: center;
+}
+
+#birdSlider {
+    margin-top: 2vh;
+    width: 100%;
+    /*margin-bottom: 10vh;*/
+    /*height: 100%;  397px*/
+}
+
+.slides {
+    position: relative;     /*sert de "référence" aux ombres (slides::after et ::before) des 2 côtés*/
+    width: 100%;
+    /*height: 100%;*/
+}
+
+.slides::before {   /*crée une ombre à gauche*/
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 5;
+    height: 600px;
+    width: 25px;
+    background-image: linear-gradient(90deg, var(--color-light), transparent);
+}
+
+.slides::after {    /*crée une ombre à droite*/
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 5;
+    height: 600px;
+    width: 25px;
+    background-image: linear-gradient(-90deg, var(--color-light), transparent);
+}
+
+.slide {
+    width: 100%;                /*gère taille du contenant scroll des cartes*/
+    display: flex;
+    align-items: center;
+    overflow: hidden;             /*montre ou cache la barre de scroll*/
+}
+
+.itemSlide {    /*gère chaque carte oiseau et donne un style de carte*/
+    border: 10px solid var(--color-borderor);
+    box-shadow: 0px 2px 10px var(--color-dark);
+    border-radius: 10px; 
+    margin: 100px 20px; /*a voir si je garde*/
+    transition: transform 0.8s;
+}
+
+.itemSlide a {
+    background-color: var(--color-dark);
+}
+
+.itemSlide img {
+    width: 200px;
+    height: 250px;
+    border-bottom: 3px solid var(--color-dark);
+    box-shadow: 0px 2px 10px var(--color-dark);
+}
+
+.miniDescription {  /*gère description chaque carte oiseau*/
+    box-shadow: 0px 2px 10px var(--color-dark);
+    padding: 10px;
+    height: auto; /*140px;*/
+    width: auto;
+    background-color: var(--color-backtext);
+    transition: background-color 1s ease;
+    /*text-align: center;*/
+}
+
+.miniDescription h3 {
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: var(--color-backtext);
+    transition: background-color 1s ease;
+}
+
+.miniDescription p {
+    padding-bottom: 10px;
+    background-color: var(--color-backtext);
+    transition: background-color 1s ease;
+}
+
+.miniDescription span {
+    font-size: small;
+    background-color: var(--color-backtext);
+    transition: background-color 1s ease;
+}
+
+.itemSlide:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+.itemSlide:hover .miniDescription, 
+.itemSlide:hover h3, 
+.itemSlide:hover p, 
+.itemSlide:hover span {
+    background-color: var(--color-hovertext);
+    transition: background-color 2s ease;
+}
+
+.itemSlide:hover h3 {
+    color: #a0540d;
+    text-shadow: 1px 1px 10px var(--color-borderor);
+}
+
+
+/********FIN ZONE SLIDER***********/
+
+
+#sectArticle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 2vh;
+    column-gap: 1vw;
+}
+
+#sectArticle h2 {
+    grid-column: 1 /span 3;
+    justify-self: center;
+}
+
+#sectArticle h3 {
+    text-align: center;
+    margin: 2vh 1vw;
+}
+
+#sectArticle a {
+    border: 1px solid black;
+    border-radius: 50% 100%;
+    padding: 0.3vh 0.2vw;
+    margin: 1vh 5vw;
+}
+
+#sectArticle article {
+    padding: 2vh 1vw;
+    border: 3px var(--color-borderor) solid;
+    border-radius: 10%;
+    background-color: var(--color-backtext);
+    transition: background-color 2s ease;
+}
+
+#sectArticle article h3, 
+#sectArticle article p, 
+#sectArticle article a {
+    background-color: var(--color-backtext);
+    transition: background-color 2s ease;
+}
+
+#sectArticle article:hover, 
+#sectArticle article:hover h3, 
+#sectArticle article:hover p, 
+#sectArticle article:hover a {
+    background-color: var(--color-hovertext);
+    transition: background-color 2s ease;
+}
+
+#sectQuiz {
+    padding: 10vh 0;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 2vh;
+    column-gap: 1vw;
+}
+
+#sectQuiz h2 {
+    grid-column: 1 /span 3;
+    justify-self: center;
+}
+
+#sectQuiz article {
+    padding: 5vh 1vw;
+    border: 3px var(--color-borderor) solid;
+    border-radius: 10%;
+    background-color: var(--color-backtext);
+    transition: background-color 2s ease;
+}
+
+#sectQuiz article h3, 
+#sectQuiz article p {
+    background-color: var(--color-backtext);
+    transition: background-color 2s ease;
+}
+
+#sectQuiz article:hover, 
+#sectQuiz article:hover h3, 
+#sectQuiz article:hover p {
+    background-color: var(--color-hovertext);
+    transition: background-color 2s ease;
+}
+
+
+
+
+/*******************************
+----------MAIN CONNEXION----------
+******************************/
+
+
+
+
+.sectConnexion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 0;
+}
+
+.sectConnexion h2 {
+    background-color: var(--color-trans);
+    padding-bottom: 5vh;
+}
+
+#formConnexion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5vh 10vw;
+    margin: 2vh 0;
+    background-image: url('../textures/textureOeuf.jpg');
+    background-size: cover; /* Ajuster la taille de l'image pour couvrir tout le corps */
+    /*background-color: var(--color-backtext);*/
+}
+
+.messageFormulaire {
+    margin-bottom: 50px;
+    color: var(--color-dark);
+    background-color: var(--color-trans);
+}
+
+#theme:checked ~ main .messageFormulaire {
+    color: var(--color-dark);
+    background-color: var(--color-trans);
+}
+
+.g-recaptcha {
+    transform:scale(0.90);
+    -webkit-transform:scale(0.90);
+    margin-bottom: 5px;
+}
+
+#formConnexion label {
+    background-color: var(--color-trans);
+}
+
+#formConnexion input {
+    margin: 1vh 0;
+    border-radius: 30px;
+    border: 3px solid var(--color-dark);
+    padding: 1vh 1vw;
+    background-color: var(--color-backtext);
+}
+
+#formConnexion input:last-child {
+    margin: 3vh 0 0 0;
+    border-radius: 50%;
+    padding: 10px 50px; /*taille bouton*/
+    cursor: pointer;
+}
+
+.sectConnexion a {
+    margin: 1vh 0;
+}
+
+.sectConnexion a:hover {
+    font-size: larger;
+    text-decoration: 2px underline var(--color-hovertextdark);
+}
+
+#formConnexion input:hover {
+    background-color: var(--color-hovertext);
+    border: 3px solid var(--color-hovertext);
+}
+
+/*Theme nuit pour connexion*/
+
+#theme:checked ~ main .sectConnexion, 
+#theme:checked ~ main .sectConnexion a {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+
+#theme:checked ~ main #formConnexion h2 {
+    color: var(--color-dark);
+    background-color: var(--color-trans);
+}
+
+#theme:checked ~ main #formConnexion, 
+#theme:checked ~ main #formConnexion input {
+    color: var(--color-light);
+    background-color: var(--color-backtextdark);
+}
+
+#theme:checked ~ main #formConnexion input::selection {  /*permet de surligner quand on sélectionne*/
+    color: var(--color-dark);
+    background-color: var(--color-borderor);
+}
+
+#theme:checked ~ main #formConnexion input:hover {
+    background-color: var(--color-hovertextdark);
+    border: 3px solid var(--color-borderor);
+}
+
+#theme:checked ~ main .sectConnexion a:hover {
+    color: var(--color-borderor);
+    font-size: larger;
+}
+
+
+
+/*******************************
+------MAIN CREATION COMPTE------
+******************************/
+
+#formCreation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5vh 10vw;
+    margin: 2vh 0;
+    background-image: url('../textures/textureOeuf.jpg');
+    background-size: cover; /* Ajuster la taille de l'image pour couvrir tout le corps */
+}
+
+#formCreation label {
+    background-color: var(--color-trans);
+}
+
+#formCreation input {
+    margin: 1vh 0;
+    border-radius: 30px;
+    border: 3px solid var(--color-dark);
+    padding: 1vh 1vw;
+    background-color: var(--color-backtext);
+}
+
+#formCreation input:last-child {
+    margin: 3vh 0 0 0;
+    border-radius: 50%;
+    padding: 10px 50px; /*taille bouton*/
+    cursor: pointer;
+}
+
+#formCreation input:hover {
+    background-color: var(--color-hovertext);
+    border: 3px solid var(--color-hovertext);
+}
+
+/*theme nuit pour formulaire création compte*/
+
+#theme:checked ~ main #formCreation h2 {
+    color: var(--color-dark);
+    background-color: var(--color-trans);
+}
+
+#theme:checked ~ main #formCreation, 
+#theme:checked ~ main #formCreation input {
+    color: var(--color-light);
+    background-color: var(--color-backtextdark);
+}
+
+#theme:checked ~ main #formCreation input::selection {  /*permet de surligner quand on sélectionne*/
+    color: var(--color-dark);
+    background-color: var(--color-borderor);
+}
+
+#theme:checked ~ main #formCreation input:hover {
+    background-color: var(--color-hovertextdark);
+    border: 3px solid var(--color-borderor);
+}
+
+
+
+/******************************
+---OISEAUTHEQUE FICHE OISEAU---
+******************************/
+
+
+/* fiche oiseau Container */
+#ficheOiseau {
+    display: flex;
+    flex-direction: column; /*retour ligne automatique*/
+    background-image: url(../textures/texturePlumeJour.png);
+    background-size: cover;
+}
+
+/* chaque fiche  */
+.fiche {
+    margin: 4vh 5vw; 
+    transition: all 0.3s ease-in-out;
+    align-self: center;
+    width: 30%;
+}
+
+/* survol chaque fiche */
+.fiche .ficheInner:hover {
+    background-color: var(--color-borderor);
+    transform: scale(1.25);  /*scale(1.05)*/
+}
+
+.fiche .ficheInner {
+    width: 100%;
+    padding: 2%;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5em;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    border: solid 2px var(--color-dark);
+}
+    
+ .ficheInner::after {
+    transition: all 0.3s ease-in-out;
+} 
+
+  /* //Expander */
+
+.fiche .ficheExpander {
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.0em;
+
+    width: 100%;
+
+    /* margin-top: 10px; */
+    flex-direction: column;
+    border: 5px solid var(--color-dark);
+}
+
+.fiche .ficheExpander img {
+    width: 100%;
+    height: 100%;
+}
+
+.fiche .ficheExpander p {
+    margin: 10px;
+}
+
+#ficheOiseau input {
+    margin-top: 20px;
+    padding: 20px 0;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+/*theme nuit l'oiseauthèque*/
+#theme:checked ~ main #ficheOiseau {
+    background-image: url(../textures/texturePlumeNuit.png);
+}
+
+#theme:checked ~ main .fiche .ficheInner:hover {
+    background-color: var(--color-borderor);
+}
+
+#theme:checked ~ main .fiche .ficheExpander {
+    background-color: var(--color-trans);
+}
+
+#theme:checked ~ main #ficheOiseau input {
+    background-color: var(--color-backtextdark);
+    color: var(--color-borderor);
+}
+
+#theme:checked ~ main #ficheOiseau input::placeholder {
+    color: var(--color-light);
+}
